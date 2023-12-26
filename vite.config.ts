@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
   console.log(env.VITE_BASE, " env.VITE_MODE");
   return {
     // base: env.VITE_MODE === "production" ? "./" : "/",
-    // base: env.VITE_BASE || "/",
+    base: env.VITE_BASE,
 
     resolve: {
       alias: {
